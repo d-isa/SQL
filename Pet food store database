@@ -1,0 +1,24 @@
+-Create a pet food store database
+
+CREATE TABLE chef_shelly (id integer primary key, name text, price integer, aisle integer, item text);
+INSERT INTO chef_shelly VALUES (1, "dehydrated chicken", 2.99, 1, "treat" );
+INSERT INTO chef_shelly VALUES(2, "dehydrated tuna", 2.99, 1, "treat");
+INSERT INTO chef_shelly VALUES (3, "dehydrated salmon", 2.99, 1, "treat");
+INSERT INTO chef_shelly VALUES (4, "sardine and shrimp", 2.50, 4, "broth");
+INSERT INTO chef_shelly VALUES (5, "beef bone", 2.50, 4, "broth");
+INSERT INTO chef_shelly VALUES (6, "chicken and tuna", 2.50, 4, "broth");
+INSERT INTO chef_shelly VALUES (7, "tuna and oatmeal", 1.49, 4, "wet food");
+INSERT INTO chef_shelly VALUES (8, "salmon and shrimp", 1.49, 4, "wet food");
+INSERT INTO CHEF_SHELLY VALUES (9, "CHICKEN PATE", 1.49, 4, "WET FOOD"); 
+INSERT INTO chef_shelly VALUES (10, "duck with gravy", 1.49, 4, "wet food");
+INSERT INTO chef_shelly VALUES (11, "chicken liver and turkey", 5.99, 3, "kibble");
+INSERT INTO chef_shelly VALUES (12, "hearty venison", 6.99, 3, "kibble");
+INSERT INTO chef_shelly VALUES (13, "seafood medely", 5.99,3, "kibble");
+INSERT INTO chef_shelly VALUES (14, "duck and trout", 5.99, 3, "kibble");
+INSERT INTO chef_shelly VALUES (15, "poultry medely", 5.99, 3, "kibble");
+
+-display order of items by price
+SELECT * FROM chef_shelly ORDER BY price asc; 
+
+display the sum of these items
+SELECT SUM(PRICE) FROM chef_shelly;
